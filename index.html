@@ -79,32 +79,31 @@
 
 				<p>To build Servo in development mode. This is useful for development, but the resulting binary is very slow.</p>
 
-				<code>
-					git clone https://github.com/servo/servo
-					cd servo
-					./mach build --dev
-					./mach run tests/html/about-mozilla.html
-				</code>
+				<div class='code'>
+					git clone https://github.com/servo/servo <br>
+					cd servo<br>
+					./mach build --dev<br>
+					./mach run tests/html/about-mozilla.html<br>
+				</div>
 
 				<p>For benchmarking, performance testing, or real-world use, add the --release flag to create an optimized build:</p>
 
-				<code>
-					./mach build --release
-					./mach run --release tests/html/about-mozilla.html
-				</code>
-
+				<div class='code'>
+					./mach build --release<br>
+					./mach run --release tests/html/about-mozilla.html<br>
+				</div>
 
 				<h3>Running</h3>
 
 				<a name='run'></a>
-				<p>Use <code>./mach run [url]</code> to run Servo.</p>
+				<p>Use <span class='code'>./mach run [url]</span> to run Servo.</p>
 				<h5>Commandline Arguments</h5>
 
 				<ul>
 					<li>
-						<code>-p INTERVAL</code> turns on the profiler and dumps info to the console every INTERVAL seconds</li>
-					<li><code>-s SIZE</code> sets the tile size for painting; defaults to 512</li>
-					<li><code>-z</code> disables all graphical output; useful for running JS / layout tests
+						<span class='code'>-p INTERVAL</span> turns on the profiler and dumps info to the console every INTERVAL seconds</li>
+					<li><span class='code'>-s SIZE</span> sets the tile size for painting; defaults to 512</li>
+					<li><span class='code'>-z</span> disables all graphical output; useful for running JS / layout tests
 				</ul>
 			</div>
 			<div class='row contrib'>

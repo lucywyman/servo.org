@@ -1,9 +1,10 @@
 @import 'materialize';
 
-$dark: #000;
+$dark: #444;
 $light: #fff;
 $color: #FF4081;
 $icon-size: 64px;
+$code-gray: #ccc;
 
 nav a:hover{
 	color: rgba($light, .8);
@@ -61,6 +62,14 @@ nav a:hover{
 			color: rgba($light, .85);
 		}
 	}
+}
+
+.code{
+	font-family: monospace;
+	color: $dark;
+	background: $code-gray;
+	padding: 2px 4px;
+	border-radius: 2px;
 }
 
 .pink, .indigo, .contrib {
