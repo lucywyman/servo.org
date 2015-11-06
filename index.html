@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link type='text/css' href='static/main.css' rel='stylesheet'>
+		<link type='text/css' href='static/css/main.css' rel='stylesheet'>
+		<link rel="stylesheet" href="static/css/octicons/octicons.css">
 
 		<link rel="stylesheet" href="/static/css/materialize.min.css">
 		<script src="/static/js/materialize.min.js"></script>
@@ -16,41 +17,89 @@
 		<nav class='row'>
 			<a class='col s1' href='#top'>Home</a>
 			<a class='col s1' href='#about'>About</a>
-			<a class='col s1' href='#contact'>Contact Us</a>
+			<a class='col s2' href='#contact'>Contact Us</a>
 		</nav>
 		<div class='main'>
 			<div name='top' class='top row'>
-				<h1>Servo</h1>
-				<p>The parallel browser engine</p>
+				<div class='align'>
+					<h1>Servo</h1>
+					<h3>The parallel browser engine</h3>
+				</div>
 			</div>
 			<div class='links row'>
-				<div class='col s4'>
-					<a href='https://github.com/servo/servo'>
-						<span class="mega-octicon octicon-mark-github"></span>
-						<p>Check us out on Github</p>
-					</a>
+				<div class='col s4 link'>
+					<div class='align'>
+						<a href='https://github.com/servo/servo'>
+							<span class="mega-octicon octicon-mark-github"></span>
+							<p>Check us out on Github</p>
+						</a>
+					</div>
 				</div>
-				<div class='col s4'>
-					<a href='http://blog.servo.org/'>
-						<span class="mega-octicon octicon-file-text"></span>
-						<p>Check out our blog</p>
-					</a>
+				<div class='col s4 link'>
+					<div class='align'>
+						<a href='http://blog.servo.org/'>
+							<span class="mega-octicon octicon-file-text"></span>
+							<p>Check out our blog</p>
+						</a>
+					</div>
 				</div>
-				<div class='col s4'>
-					<a href='http://servo.github.io/servo-starters/'>
-						<span class="mega-octicon octicon-arrow-down"></span>
-						<p>Get started contributing!</p>
-					</a>
+				<div class='col s4 link'>
+					<div class='align'>
+						<a href='http://servo.github.io/servo-starters/'>
+							<span class="mega-octicon octicon-arrow-down"></span>
+							<p>Get started contributing!</p>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div name='about' class='row'>
+			<div name='about' class='row about indigo'>
+				<h3>What is Servo?</h3>
 				<p>Servo is a prototype web browser engine 
 				written in the Rust language. 
 				It is currently developed on 64bit OS X, 
 				64bit Linux, Android, and Gonk (Firefox OS).</p>
 
-			</div>
-			<div name='contact'>
+				<h3>Prerequisites</h3>
+				<p>You can find what you need to install on your 
+				particular system
+				<a href="https://github.com/servo/servo#prerequisites">
+					on our github</a>.</p>
+
+				<h3>Building</h3>
+
+				<p>Servo is built with Cargo, the Rust package manager. 
+				We also use Mozilla's Mach tools to orchestrate the 
+				build and other tasks.</p>
+
+				<h5>Normal build</h5>
+
+				<p>To build Servo in development mode. This is useful for development, but the resulting binary is very slow.</p>
+
+				<code>
+					git clone https://github.com/servo/servo
+					cd servo
+					./mach build --dev
+					./mach run tests/html/about-mozilla.html
+				</code>
+
+				<p>For benchmarking, performance testing, or real-world use, add the --release flag to create an optimized build:</p>
+
+				<code>
+					./mach build --release
+					./mach run --release tests/html/about-mozilla.html
+				</code>
+
+
+				<h3>Running</h3>
+
+				<p>Use <code>./mach run [url]</code> to run Servo.</p>
+				<h5>Commandline Arguments</h5>
+
+				<ul>
+					<li>
+						<code>-p INTERVAL</code> turns on the profiler and dumps info to the console every INTERVAL seconds</li>
+					<li><code>-s SIZE</code> sets the tile size for painting; defaults to 512</li>
+					<li><code>-z</code> disables all graphical output; useful for running JS / layout tests
 
 			</div>
 		</div>

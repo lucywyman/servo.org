@@ -1,8 +1,60 @@
 @import 'materialize';
 
-.index-image {
-	max-width: 40%;
-	margin: 0 auto;
-	padding: 20px;
+$dark: #000;
+$light: #fff;
+$color: #FF4081;
+
+nav a:hover{
+	color: rgba($light, .8);
 }
 
+.top {
+	background: $dark;
+	color: $light;
+	text-align: center;
+	min-height: 40vh;
+	position: relative;
+
+	.align {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.row {
+	margin-bottom: 0px;
+}
+
+.links {
+	.link {
+		text-align: center;
+		min-height: 40vh;
+		position: relative;
+
+		.align {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.mega-octicon {
+				font-size: 64px;
+			}
+		}
+	}
+}
+
+.about {
+	padding: 10%;
+	color: $light;
+	
+	a {
+		color: rgba($light, .7);
+
+		&:hover {
+			color: rgba($light, .85);
+		}
+	}
+}

@@ -8340,9 +8340,42 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-.index-image {
-  max-width: 40%;
-  margin: 0 auto;
-  padding: 20px; }
+nav a:hover {
+  color: rgba(255, 255, 255, 0.8); }
+
+.top {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  min-height: 40vh;
+  position: relative; }
+  .top .align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.row {
+  margin-bottom: 0px; }
+
+.links .link {
+  text-align: center;
+  min-height: 40vh;
+  position: relative; }
+  .links .link .align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .links .link .align .mega-octicon {
+      font-size: 64px; }
+
+.about {
+  padding: 10%;
+  color: #fff; }
+  .about a {
+    color: rgba(255, 255, 255, 0.7); }
+    .about a:hover {
+      color: rgba(255, 255, 255, 0.85); }
 
 /*# sourceMappingURL=main.css.map */
