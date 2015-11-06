@@ -8369,13 +8369,21 @@ nav a:hover {
     transform: translate(-50%, -50%); }
     .links .link .align .mega-octicon {
       font-size: 64px; }
+    .links .link .align .doge {
+      max-width: 94px; }
 
-.about {
-  padding: 10%;
+.indigo, .pink {
   color: #fff; }
-  .about a {
+  .indigo a, .pink a {
     color: rgba(255, 255, 255, 0.7); }
-    .about a:hover {
+    .indigo a:hover, .pink a:hover {
       color: rgba(255, 255, 255, 0.85); }
+
+.pink, .indigo, .contrib {
+  padding: 7% 10%; }
+
+.doge {
+  margin: 0 auto;
+  max-width: 30%; }
 
 /*# sourceMappingURL=main.css.map */

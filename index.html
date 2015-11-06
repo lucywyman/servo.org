@@ -17,6 +17,9 @@
 		<nav class='row'>
 			<a class='col s1' href='#top'>Home</a>
 			<a class='col s1' href='#about'>About</a>
+			<a class='col s1' href='#run'>Run Servo</a>
+			<a class='col s1' href='#contrib'>Contributing</a>
+			<a class='col s1' href='#news'>News</a>
 		</nav>
 		<div class='main'>
 			<div class='top row'>
@@ -93,6 +96,7 @@
 
 				<h3>Running</h3>
 
+				<a name='run'></a>
 				<p>Use <code>./mach run [url]</code> to run Servo.</p>
 				<h5>Commandline Arguments</h5>
 
@@ -101,7 +105,75 @@
 						<code>-p INTERVAL</code> turns on the profiler and dumps info to the console every INTERVAL seconds</li>
 					<li><code>-s SIZE</code> sets the tile size for painting; defaults to 512</li>
 					<li><code>-z</code> disables all graphical output; useful for running JS / layout tests
+				</ul>
+			</div>
+			<div class='row contrib'>
+				<a name='contrib'></a>
+				<h3>Contributing to Servo</h3>
 
+				<p>Servo welcomes contribution from everyone. Here are the guidelines if you are thinking of helping us:</p>
+
+				<h5>Contributions</h5>
+
+				<p>Contributions to Servo or its dependencies should 
+				be made in the form of GitHub pull requests. Each 
+				pull request will be reviewed by a core contributor 
+				(someone with permission to land patches) and either 
+				landed in the main tree or given feedback for changes 
+				that would be required. All contributions should 
+				follow this format, even those from core contributors.
+
+				If you're looking for easy bugs, have a look at the 
+				<a href="https://github.com/servo/servo/labels/E-easy">E-Easy issue tag</a> on GitHub.
+
+				See <a href="https://github.com/servo/servo/blob/master/HACKING_QUICKSTART.md">HACKING_QUICKSTART.md</a> 
+				for more information on how to start working on Servo.
+
+				<h5>Pull Request Checklist</h5>
+
+				<p>Branch from the master branch and, if needed, 
+				rebase to the current master branch before submitting 
+				your pull request. If it doesn't merge cleanly with 
+				master you may be asked to rebase your changes.
+
+				Don't put submodule updates in your pull request unless 
+				they are to landed commits.
+
+				If your patch is not getting reviewed or you need a 
+				specific person to review it, you can @-reply a 
+				reviewer asking for a review in the pull request or a 
+				comment, or you can ask for a review in #servo on 
+				irc.mozilla.org.
+
+				Add tests relevant to the fixed bug or new feature. 
+				For a DOM change this will usually be a web platform 
+				test; for layout, a reftest. See our 
+				<a href="https://github.com/servo/servo/wiki/Testing">
+					testing guide </a>
+				for more information.
+
+				For specific git instructions, see 
+				<a href="https://github.com/servo/servo/wiki/Github-workflow">GitHub workflow 101.</a></p>
+
+				<h3>Conduct</h3>
+
+				<p>We follow the <a href="http://www.rust-lang.org/conduct.html">Rust Code of Conduct.</a></p>
+
+			</div>
+			<div class='row pink'>
+				<h3>News</h3>
+
+				<p>Halp what should go here?</p>
+			</div>
+			<div class='row indigo'>
+				<h3>Communication</h3>
+
+				<p>Servo contributors frequent the #servo channel on 
+				<a href="https://wiki.mozilla.org/IRC">irc.mozilla.org.</a>
+
+				You can also join the <a href="https://lists.mozilla.org/listinfo/dev-servo">dev-servo mailing list.</a></p>
+
+			<img class='doge' src='static/img/doge-servo.jpg' />
 			</div>
 		</div>
 	</body>

@@ -3,6 +3,7 @@
 $dark: #000;
 $light: #fff;
 $color: #FF4081;
+$icon-size: 64px;
 
 nav a:hover{
 	color: rgba($light, .8);
@@ -40,14 +41,17 @@ nav a:hover{
 			transform: translate(-50%, -50%);
 
 			.mega-octicon {
-				font-size: 64px;
+				font-size: $icon-size;
+			}
+
+			.doge {
+				max-width: $icon-size+30;
 			}
 		}
 	}
 }
 
-.about {
-	padding: 10%;
+.indigo, .pink {
 	color: $light;
 	
 	a {
@@ -57,4 +61,13 @@ nav a:hover{
 			color: rgba($light, .85);
 		}
 	}
+}
+
+.pink, .indigo, .contrib {
+	padding: 7% 10%;
+}
+
+.doge {
+	margin: 0 auto;
+	max-width: 30%;
 }
